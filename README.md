@@ -19,7 +19,7 @@ HSP (Highly Sensitive Person) 向けアフィリエイトページ
 
 ## 🔗 本番URL
 
-https://hsp-chat-app.web.app
+https://hsp-affiliate.web.app
 
 ## 📱 開発用コマンド
 
@@ -43,5 +43,5 @@ npm run build
 
 GitHub Actions自動デプロイには以下の設定が必要です：
 
-1. **Firebase Service Account**: `FIREBASE_SERVICE_ACCOUNT_HSP_CHAT_APP` をGitHub Secretsに設定
+1. **Firebase Service Account**: `FIREBASE_SERVICE_ACCOUNT_HSP_AFFILIATE` をGitHub Secretsに設定
 2. **詳細手順**: `DEPLOY_SETUP.md` を参照

@@ -18,7 +18,7 @@ HSPアフィリエイトページのGitHub Actions自動デプロイ設定手順
 ### 2. Firebase Service Account作成とGitHubシークレット設定
 
 #### Firebase側の設定
-1. [Firebase Console](https://console.firebase.google.com/project/hsp-chat-app/settings/serviceaccounts/adminsdk) にアクセス
+1. [Firebase Console](https://console.firebase.google.com/project/hsp-affiliate/settings/serviceaccounts/adminsdk) にアクセス
 2. 「プロジェクト設定」→「サービスアカウント」
 3. 「新しい秘密鍵の生成」をクリック
 4. JSONファイルをダウンロード（⚠️ 安全に保管）
@@ -29,12 +29,12 @@ HSPアフィリエイトページのGitHub Actions自動デプロイ設定手順
 3. 「New repository secret」をクリック
 4. 以下のシークレットを追加：
 
-**Name:** `FIREBASE_SERVICE_ACCOUNT_HSP_CHAT_APP`
+**Name:** `FIREBASE_SERVICE_ACCOUNT_HSP_AFFILIATE`
 **Value:** ダウンロードしたJSONファイルの**全内容**をコピー&ペースト
 ```json
 {
   "type": "service_account",
-  "project_id": "hsp-chat-app",
+  "project_id": "hsp-affiliate",
   "private_key_id": "...",
   "private_key": "...",
   "client_email": "...",
@@ -67,7 +67,7 @@ git push -u origin main
 
 ### 自動デプロイが成功すると...
 1. **GitHub Actions**タブで緑色のチェックマーク
-2. **自動デプロイ先**: https://hsp-chat-app.web.app
+2. **自動デプロイ先**: https://hsp-affiliate.web.app
 3. **プレビュー**: PRごとに一意のURLが生成
 
 ### トラブルシューティング
