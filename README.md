@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HSP Affiliate Pages
 
-## Getting Started
+HSP (Highly Sensitive Person) 向けアフィリエイトページ
 
-First, run the development server:
+## 🌟 概要
+
+このプロジェクトは、HSP（繊細さん）向けのおすすめサービスを紹介するアフィリエイトページです。
+
+### 紹介サービス
+- **Kimochi**: オンラインカウンセリングサービス
+- **Awarefy**: AI メンタルパートナーアプリ
+
+## 🚀 技術スタック
+
+- **フレームワーク**: Next.js 15 (App Router)
+- **スタイリング**: Tailwind CSS
+- **ホスティング**: Firebase Hosting
+- **デプロイ**: GitHub Actions (自動デプロイ)
+
+## 🔗 本番URL
+
+https://hsp-chat-app.web.app
+
+## 📱 開発用コマンド
 
 ```bash
+# 依存関係インストール
+npm install
+
+# 開発サーバー起動
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# ビルド
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 自動デプロイ
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **mainブランチ**: 本番環境に自動デプロイ
+- **プルリクエスト**: プレビュー環境を自動生成
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚠️ 設定が必要な項目
 
-## Learn More
+GitHub Actions自動デプロイには以下の設定が必要です：
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Firebase Service Account**: `FIREBASE_SERVICE_ACCOUNT_HSP_CHAT_APP` をGitHub Secretsに設定
+2. **詳細手順**: `DEPLOY_SETUP.md` を参照
