@@ -3,7 +3,7 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center" style={{ backgroundColor: 'var(--color-hsp-orange)' }}>
       <div className="text-center">
         <h1 className="text-2xl font-bold mb-4" style={{ color: 'var(--color-hsp-text)' }}>
-          HSPおすすめサービス
+          HSPの方へおすすめサービス
         </h1>
         <p className="mb-8" style={{ color: 'var(--color-hsp-text)' }}>
           アプリ内からアクセスしてください
