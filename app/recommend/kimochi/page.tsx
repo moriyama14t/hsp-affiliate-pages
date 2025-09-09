@@ -1,6 +1,13 @@
 export default function KimochiPage() {
   return (
     <main className="min-h-screen bg-orange-50">
+      {/* PR表記 */}
+      <div className="bg-gray-50 border-b border-gray-200 py-2">
+        <p className="text-center text-xs text-gray-500">
+          本ページにはプロモーションが含まれています
+        </p>
+      </div>
+      
       {/* ヘッダー */}
       {/* <header className="p-4 bg-white shadow-sm">
         <a 
@@ -20,8 +27,8 @@ export default function KimochiPage() {
         </div>
         
         <h1 className="text-2xl font-bold mb-6 text-gray-800 leading-tight">
-          もう少し深く相談したい時に<br />
-          <span className="text-orange-500">Kimochi</span>があります
+          毎日を頑張る<span className="text-orange-600">20〜40代女性</span>の<br />
+          心のメンテナンスに<span className="text-orange-600">Kimochi</span>
         </h1>
 
         {/* 公式バナー300x250 */}
@@ -49,36 +56,63 @@ export default function KimochiPage() {
           />
         </div>
         
-        <p className="text-gray-600 leading-relaxed">
-          HSPChatAppで日常的な相談をしているあなたに、<br />
-          国家資格を持つ心理師による<br />
-          本格的なカウンセリングサービスをご紹介
+        <p className="text-gray-600 leading-relaxed mb-4">
+          恋愛・仕事・人間関係・家庭の悩みを<br />
+          <span className="font-bold text-orange-700">専門家と一緒に解決</span>しませんか？<br /><br />
+          <a href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YJRM" rel="nofollow" className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 btn-shine">
+            国内最大級のオンラインカウンセリングサービス【Kimochi】
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </a>
+          <img width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=45C669+E0VLRM+5OI8+5YJRM" alt="" style={{ display: 'none', border: 0 }}/>
         </p>
+        
+        <div className="bg-orange-100 rounded-lg p-4 text-center mt-6 border border-orange-200">
+          <p className="text-sm text-orange-700 font-medium mb-2">
+            🎓 全員が国家資格「<span className="font-bold">公認心理師</span>」保持者
+          </p>
+          <p className="text-xs text-orange-600">
+            忙しい毎日の中でも<span className="font-bold">手軽に心のケア</span>ができます<br />
+            ビデオ通話・チャット相談で<span className="font-bold">続けやすい</span>環境を提供
+          </p>
+        </div>
       </section>
 
-      {/* HSPChatAppとの比較セクション */}
+      {/* 年代別相談内容セクション */}
       <section className="px-6 py-6">
-        <div className="bg-white rounded-xl p-6 shadow-sm border border-orange-100">
-          <h2 className="text-lg font-bold mb-4 text-gray-800">
-            🌸 HSPChatApp + Kimochi で、より充実したサポート
+        <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+          <h2 className="text-xl font-bold mb-4 text-gray-800">
+            <span className="text-orange-600">🌸 あなたのライフステージに</span>合わせた相談
           </h2>
           
           <div className="space-y-4">
-            <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-medium text-gray-800">日常の相談 → HSPChatApp</p>
-                <p className="text-sm text-gray-600">ちょっとした悩みや感情の整理に</p>
+            <div className="bg-gradient-to-r from-pink-50 to-orange-50 rounded-lg p-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-pink-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="font-medium text-gray-800"><span className="text-pink-600">20代〜30代の方</span></p>
+                  <p className="text-sm text-gray-600">恋愛・婚活・職場の人間関係・将来のキャリアについて</p>
+                </div>
               </div>
             </div>
             
-            <div className="flex items-start space-x-3">
-              <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
-              <div>
-                <p className="font-medium text-gray-800">深い相談 → Kimochi</p>
-                <p className="text-sm text-gray-600">人間関係や恋愛、仕事の本格的な悩みに</p>
+            <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-2 h-2 bg-orange-400 rounded-full mt-2 flex-shrink-0"></div>
+                <div>
+                  <p className="font-medium text-gray-800"><span className="text-orange-600">30代〜40代の方</span></p>
+                  <p className="text-sm text-gray-600">パートナーシップ・子育て・家庭の悩み・ワークライフバランス</p>
+                </div>
               </div>
             </div>
+          </div>
+          
+          <div className="mt-4 bg-orange-50 rounded-lg p-3 text-center">
+            <p className="text-sm text-orange-700">
+              <span className="font-bold">「自分らしく生きるためのヒントがほしい」</span><br />
+              そんな想いを持つ方々にKimochiが寄り添います
+            </p>
           </div>
         </div>
       </section>
@@ -86,8 +120,8 @@ export default function KimochiPage() {
       {/* 公認心理師について詳細説明セクション */}
       <section className="px-6 py-6">
         <div className="bg-orange-50 rounded-xl p-6 shadow-sm border border-orange-100">
-          <h2 className="text-lg font-bold mb-4 text-orange-800">
-            🎓 すべてのカウンセラーが「公認心理師」
+          <h2 className="text-xl font-bold mb-4 text-orange-800">
+            🎓 すべてのカウンセラーが<span className="text-2xl">「公認心理師」</span>
           </h2>
           
           <div className="bg-white rounded-lg p-4 mb-4">
@@ -106,21 +140,21 @@ export default function KimochiPage() {
       {/* Kimochiの特徴セクション */}
       <section className="px-6 py-6">
         <div className="bg-white rounded-xl p-6 shadow-sm">
-          <h2 className="text-lg font-bold mb-4 text-orange-600">
-            Kimochiの6つの特徴
+          <h2 className="text-xl font-bold mb-4 text-orange-600">
+            <span className="text-2xl">心のメンテナンス</span>ができるKimochiの特徴
           </h2>
           
           <div className="space-y-4">
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
-                <p className="font-medium text-gray-800">国家資格「公認心理師」が全員サポート</p>
+                <p className="font-medium text-gray-800"><span className="font-bold text-orange-600">国家資格「公認心理師」</span>が全員サポート</p>
                 <p className="text-sm text-gray-600">専門的な知識と経験を持ったプロが対応</p>
               </div>
             </div>
             
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
                 <p className="font-medium text-gray-800">顔出し不要・匿名OK</p>
                 <p className="text-sm text-gray-600">本名不要、ビデオOFF、音声のみでも相談可能</p>
@@ -128,15 +162,15 @@ export default function KimochiPage() {
             </div>
             
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
-                <p className="font-medium text-gray-800">初月30%OFF（2,980円～）</p>
+                <p className="font-medium text-gray-800"><span className="font-bold text-orange-600 text-lg">初月30%OFF</span>（2,980円～）</p>
                 <p className="text-sm text-gray-600">お手頃価格でプロのカウンセリングを体験</p>
               </div>
             </div>
             
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
                 <p className="font-medium text-gray-800">平日夜・土日祝も予約可能</p>
                 <p className="text-sm text-gray-600">お仕事帰りや休日にゆっくり相談</p>
@@ -144,7 +178,7 @@ export default function KimochiPage() {
             </div>
             
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
                 <p className="font-medium text-gray-800">オンライン完結で手軽</p>
                 <p className="text-sm text-gray-600">自宅から気軽に本格カウンセリング</p>
@@ -152,12 +186,22 @@ export default function KimochiPage() {
             </div>
 
             <div className="flex items-start space-x-3">
-              <span className="text-green-500 font-bold mt-0.5">✓</span>
+              <span className="text-orange-500 font-bold mt-0.5">✓</span>
               <div>
-                <p className="font-medium text-gray-800">月額制で通いやすい</p>
-                <p className="text-sm text-gray-600">都度払いより継続しやすい料金体系</p>
+                <p className="font-medium text-gray-800">月額制で<span className="font-bold text-orange-600">心のメンテナンス習慣</span>を築ける</p>
+                <p className="text-sm text-gray-600">都度払いより継続しやすい料金体系。毎日の生活の一部として心のケアを</p>
               </div>
             </div>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <a href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YJRM" rel="nofollow" className="inline-flex items-center gap-1 text-xs text-orange-700 font-medium hover:underline">
+              → 国内最大級のオンラインカウンセリングサービス【Kimochi】
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <img width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=45C669+E0VLRM+5OI8+5YJRM" alt="" style={{ display: 'none', border: 0 }}/>
           </div>
         </div>
       </section>
@@ -170,51 +214,45 @@ export default function KimochiPage() {
           </h2>
           
           <div className="bg-white rounded-lg p-4 space-y-3">
-            <div className="border-l-4 border-orange-500 pl-4">
-              <p className="font-bold text-gray-800">🎉 初月限定 30%OFF</p>
-              <p className="text-sm text-orange-600">通常4,400円 → <span className="text-lg font-bold">2,980円</span></p>
+            <div className="border-l-4 border-blue-500 pl-4">
+              <p className="font-bold text-gray-800">🎉 初月限定 <span className="text-orange-600 text-xl">30%OFF</span></p>
+              <p className="text-sm text-orange-600">ととのびプラン：4,400円 → <span className="font-bold">2,980円</span></p>
+              <p className="text-sm text-orange-600">のびのびプラン：9,980円 → <span className="font-bold">6,980円</span></p>
+              <p className="text-sm text-orange-600">じっくりプラン：19,980円 → <span className="font-bold">13,800円</span></p>
             </div>
             
             <div className="border-l-4 border-orange-400 pl-4">
-              <p className="font-bold text-gray-800">📅 月額サブスクリプション</p>
-              <p className="text-sm text-gray-600">2ヶ月目以降：4,400円/月</p>
-              <p className="text-xs text-gray-500">※回数制限なし、いつでも相談可能</p>
+              <p className="font-bold text-gray-800">📅 選べる3つのプラン</p>
+              <p className="text-sm text-gray-600">ととのびプラン：4,400円/月（1回/月）</p>
+              <p className="text-sm text-gray-600">のびのびプラン：9,980円/月（2回/月）</p>
+              <p className="text-sm text-gray-600">じっくりプラン：19,980円/月（4回/月）</p>
             </div>
 
-            <div className="bg-orange-50 p-3 rounded-lg text-center">
+            <div className="bg-orange-50 p-3 rounded-lg text-center border border-orange-200">
               <p className="text-xs text-orange-700">
                 <span className="font-medium">💡 HSPの方へ</span><br />
                 継続的な関係性を大切にする月額制だから<br />
                 安心してじっくりと相談できます
               </p>
             </div>
+            
+            <div className="mt-4 text-center">
+              <a 
+                href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YRHE" 
+                rel="nofollow" 
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 btn-shine"
+              >
+                人間関係・恋愛・仕事などの心理相談を始める
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+              <img width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=45C669+E0VLRM+5OI8+5YRHE" alt="" style={{ display: 'none', border: 0 }}/>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* 対応できる悩みセクション */}
-      <section className="px-6 py-6">
-        <div className="bg-gradient-to-r from-orange-50 to-orange-100 rounded-xl p-6">
-          <h3 className="text-lg font-bold mb-4 text-gray-800 text-center">
-            こんな悩みに専門的にサポート
-          </h3>
-          
-          <div className="grid grid-cols-1 gap-3 text-sm">
-            <div className="bg-white rounded-lg p-3 text-center">
-              💕 人間関係・恋愛の悩み
-            </div>
-            <div className="bg-white rounded-lg p-3 text-center">
-              💼 仕事・キャリアの相談
-            </div>
-            <div className="bg-white rounded-lg p-3 text-center">
-              🏠 家族関係・パートナーシップ
-            </div>
-            <div className="bg-white rounded-lg p-3 text-center">
-              🌱 自分らしさ・人生設計
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 利用者の声セクション */}
       <section className="px-6 py-6">
@@ -224,46 +262,54 @@ export default function KimochiPage() {
           </h2>
           
           <div className="space-y-4">
-            {/* 口コミ1 */}
+            {/* 口コミ1 - 実際の声 */}
             <div className="bg-white rounded-lg p-4 shadow-sm">
               <div className="flex items-center mb-2">
-                <span className="text-sm text-gray-500">Aさん（20代女性）</span>
+                <span className="text-sm text-gray-500">30代女性</span>
                 <div className="ml-auto flex text-yellow-400">
                   ★★★★★
                 </div>
               </div>
               <p className="text-sm text-gray-700 leading-relaxed">
-                「職場での人間関係に悩んでいましたが、顔を見せる必要がないので安心して相談できました。HSPChatAppで日常的な気持ちを整理して、Kimochiでより深い相談をするという使い分けができて良いです。公認心理師の先生なので、的確なアドバイスをいただけます。」
-              </p>
-            </div>
-
-            {/* 口コミ2 */}
-            <div className="bg-white rounded-lg p-4 shadow-sm">
-              <div className="flex items-center mb-2">
-                <span className="text-sm text-gray-500">Bさん（30代男性）</span>
-                <div className="ml-auto flex text-yellow-400">
-                  ★★★★☆
-                </div>
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                「仕事のストレスで精神的に参っていた時に利用しました。月額制なので、『今月はもう相談料を払ったから』と思うと気軽に相談できます。夜遅くや休日でも予約が取れるのが助かります。継続して相談することで、考え方が変わってきました。」
-              </p>
-            </div>
-
-            {/* 口コミ3 - HSP特化 */}
-            <div className="bg-white rounded-lg p-4 shadow-sm border-l-4 border-orange-400">
-              <div className="flex items-center mb-2">
-                <span className="text-sm text-gray-500">Cさん（HSP・20代女性）</span>
-                <div className="ml-auto flex text-yellow-400">
-                  ★★★★★
-                </div>
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                「HSP気質で些細なことに敏感に反応してしまうのですが、Kimochiのカウンセラーの方は理解してくださって、責めるようなことは一切ありません。自分のペースで話せるし、音声だけでも大丈夫なので、プレッシャーを感じずに済みます。HSPChatAppと合わせて使うことで、心が軽くなりました。」
+                「いつも本当にありがとうございます。先生に話を聞いてもらうことが、私にとってすごく大事なことだと感じています。」
               </p>
               <div className="mt-2 text-xs text-orange-600 bg-orange-50 p-2 rounded">
-                💡 HSPの方からの特別な感想
+                💡 <span className="font-bold">専門家と話すことで気持ちが整理され、前向きになれる</span>と96%が回答
               </div>
+            </div>
+
+            {/* 口コミ2 - 実際の声 */}
+            <div className="bg-white rounded-lg p-4 shadow-sm">
+              <div className="flex items-center mb-2">
+                <span className="text-sm text-gray-500">20代女性</span>
+                <div className="ml-auto flex text-yellow-400">
+                  ★★★★★
+                </div>
+              </div>
+              <p className="text-sm text-gray-700 leading-relaxed">
+                「今後のキャリアについての相談を親身になって聞いてくださりありがとうございます。先生とのメッセージを通して悩みがクリアになり楽になりました。」
+              </p>
+            </div>
+
+            {/* 特徴ボックス - 通過率8%の厳しい審査 */}
+            <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+              <p className="text-sm font-bold text-orange-800 mb-2">
+                🏅 全員が公認心理師 + 通過率8%の厳しい審査
+              </p>
+              <p className="text-xs text-orange-700">
+                Kimochiでは国家資格「公認心理師」の中でも、さらに通過率8%の厳しい審査をクリアしたカウンセラーのみが在籍。相談経験300回以上のベテランが対応します。
+              </p>
+            </div>
+            
+            {/* 実績データ */}
+            <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+              <p className="text-sm font-bold text-orange-800 mb-2">
+                🏆 確かな実績
+              </p>
+              <p className="text-xs text-orange-700">
+                ユーザー満足度<span className="font-bold text-lg">96%</span>（公式サイト公表値）<br />
+                ※指導医の監修のもと運営されています
+              </p>
             </div>
           </div>
         </div>
@@ -271,7 +317,7 @@ export default function KimochiPage() {
 
       {/* 利用の流れセクション */}
       <section className="px-6 py-6">
-        <div className="bg-gray-50 rounded-xl p-6 shadow-sm">
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
           <h2 className="text-lg font-bold mb-4 text-gray-800 text-center">
             📋 Kimochiの始め方（4ステップ）
           </h2>
@@ -318,8 +364,8 @@ export default function KimochiPage() {
             </div>
           </div>
 
-          <div className="mt-6 bg-blue-50 p-4 rounded-lg text-center">
-            <p className="text-sm text-blue-700">
+          <div className="mt-6 bg-orange-50 p-4 rounded-lg text-center">
+            <p className="text-sm text-orange-700">
               <span className="font-medium">🕐 所要時間：約10分で開始可能</span><br />
               すぐに相談したい時でも、当日予約に対応している場合があります
             </p>
@@ -327,51 +373,109 @@ export default function KimochiPage() {
         </div>
       </section>
 
-      {/* FAQ セクション */}
+      {/* ユーザー評価・レビューセクション */}
       <section className="px-6 py-6">
-        <div className="bg-gray-50 rounded-xl p-6 shadow-sm">
-          <h2 className="text-lg font-bold mb-4 text-gray-800 text-center">
-            ❓ よくある質問
+        <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 shadow-lg border-2 border-orange-200">
+          <h2 className="text-xl font-bold mb-6 text-orange-800 text-center">
+            🏆 <span className="text-2xl">なぜ選ばれ続けるのか</span>
           </h2>
           
+          {/* 主要な理由を大きく強調 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-orange-500">
+              <div className="text-center">
+                <p className="text-3xl font-bold text-orange-600 mb-2">🏅 96%</p>
+                <p className="text-lg font-bold text-gray-800">満足度</p>
+                <p className="text-sm text-orange-700 font-medium">「気持ちが整理され前向きに」</p>
+              </div>
+            </div>
+            
+            <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-blue-500">
+              <div className="text-center">
+                <p className="text-2xl font-bold text-blue-600 mb-2">🎓 100%</p>
+                <p className="text-lg font-bold text-gray-800">公認心理師</p>
+                <p className="text-sm text-blue-700 font-medium">国家資格保持者のみが対応</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* 価格インパクト */}
+          <div className="bg-gradient-to-r from-red-100 to-pink-100 rounded-lg p-4 mb-6 border-2 border-red-200">
+            <div className="text-center">
+              <p className="text-sm text-red-700 font-bold mb-2">通常のカウンセリングは<span className="text-lg">1万円以上</span>が相場ですが...</p>
+              <p className="text-2xl font-bold text-orange-600">初月は <span className="text-3xl">2,980円</span>から！</p>
+              <p className="text-lg font-bold text-red-600">プロのカウンセリングが<span className="text-xl">手軽で続けやすい</span></p>
+            </div>
+          </div>
+
+          {/* 実際の利用者の声を大きく表示 */}
           <div className="space-y-4">
-            <div className="bg-white rounded-lg p-4">
-              <h3 className="font-medium text-gray-800 mb-2">Q. 保険は使えますか？</h3>
-              <p className="text-sm text-gray-600">A. オンラインカウンセリングは保険適用外のため、自費診療となります。ただし、月額制で継続しやすい料金設定になっています。</p>
+            <h3 className="text-lg font-bold text-center text-orange-800 mb-4">
+              💬 <span className="text-xl">実際の利用者の声</span>
+            </h3>
+            
+            <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-pink-400">
+              <p className="text-sm font-medium text-gray-800 leading-relaxed mb-2">
+                「<span className="font-bold text-pink-600">深い感情レベルまで理解してもらえる</span>カウンセリングを受けているように感じます」
+              </p>
+              <p className="text-sm text-gray-600 font-medium">- H.M.さん（20代後半女性）</p>
             </div>
 
-            <div className="bg-white rounded-lg p-4">
-              <h3 className="font-medium text-gray-800 mb-2">Q. 本名を名乗る必要がありますか？</h3>
-              <p className="text-sm text-gray-600">A. 本名は不要です。ニックネームやイニシャルでも問題ありません。プライバシーを重視したサービスです。</p>
+            <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-blue-400">
+              <p className="text-sm font-medium text-gray-800 leading-relaxed mb-2">
+                「<span className="font-bold text-blue-600">キャリアに関する相談を受けて、悩みが明確になり</span>助かりました」
+              </p>
+              <p className="text-sm text-gray-600 font-medium">- T.K.さん（30代前半男性）</p>
             </div>
 
-            <div className="bg-white rounded-lg p-4">
-              <h3 className="font-medium text-gray-800 mb-2">Q. どのような相談ができますか？</h3>
-              <p className="text-sm text-gray-600">A. 人間関係、恋愛、仕事、家族問題、HSP気質に関する悩み、ストレス、不安など幅広い相談に対応しています。</p>
+            <div className="bg-white rounded-lg p-4 shadow-md border-l-4 border-green-400">
+              <p className="text-sm font-medium text-gray-800 leading-relaxed mb-2">
+                「長年抱えていた個人的な葛藤について話した後、<span className="font-bold text-green-600">認められたと感じました</span>」
+              </p>
+              <p className="text-sm text-gray-600 font-medium">- Y.K.さん（30代後半女性）</p>
             </div>
-
-            <div className="bg-white rounded-lg p-4">
-              <h3 className="font-medium text-gray-800 mb-2">Q. 月額制の解約はいつでもできますか？</h3>
-              <p className="text-sm text-gray-600">A. はい、月額制はいつでも解約可能です。解約後も当月末まで利用できます。</p>
-            </div>
+          </div>
+          
+          <div className="mt-4 text-center">
+            <a 
+              href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YRHE" 
+              rel="nofollow"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-8 py-4 rounded-full font-bold text-base hover:from-green-600 hover:to-emerald-600 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 btn-shine"
+            >
+              【お申込みはこちら】高評価のKimochiを今すぐ試す
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <img width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=45C669+E0VLRM+5OI8+5YRHE" alt="" style={{ display: 'none', border: 0 }}/>
           </div>
         </div>
       </section>
 
+
+
       {/* CTAセクション */}
       <section className="px-6 py-8">
         <div className="text-center">
-          <p className="text-sm text-gray-600 mb-4">
-            HSPChatAppでは解決できない深い悩みも<br />
-            Kimochiなら専門家と一緒に解決できます
-          </p>
+          <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg p-6 mb-6 border border-orange-200">
+            <p className="text-sm text-orange-800 font-bold mb-2">
+              🌟 深い悩みを専門家に相談しよう
+            </p>
+            <p className="text-xs text-orange-700">
+              HSPChatAppでは解決できない深い悩みも<br />
+              Kimochiなら専門家と一緒に解決できます
+            </p>
+          </div>
           
           <a 
             href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YRHE" 
             rel="nofollow"
-            className="inline-block w-full max-w-sm px-6 py-4 bg-orange-500 text-white font-bold rounded-xl text-lg shadow-lg hover:bg-orange-600 transition-colors"
+            className="inline-flex items-center justify-center gap-2 w-full max-w-sm px-8 py-4 bg-gradient-to-r from-amber-500 via-orange-500 to-rose-500 text-white font-bold rounded-full text-lg shadow-xl hover:from-amber-600 hover:via-orange-600 hover:to-rose-600 transition-all duration-300 transform hover:-translate-y-1 animate-bounce btn-shine"
           >
             Kimochiで相談を始める
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
           <img 
             width="1" 
@@ -383,83 +487,53 @@ export default function KimochiPage() {
           
           <p className="mt-3 text-xs text-gray-500">
             ※外部サイト（Kimochi公式サイト）に移動します<br />
-            初月30%OFF 2,980円から利用可能
+            初月30%OFF 2,980円から<span className="font-bold">手軽で続けやすい</span>心のメンテナンスを
           </p>
         </div>
       </section>
 
-      {/* サービス比較表 */}
+      {/* SNS活用推奨セクション */}
       <section className="px-6 py-6">
-        <div className="bg-gray-50 rounded-xl p-6 shadow-sm">
-          <h2 className="text-lg font-bold mb-4 text-gray-800 text-center">
-            📊 サービス比較表
+        <div className="bg-orange-50 rounded-xl p-6 shadow-sm border border-orange-100">
+          <h2 className="text-lg font-bold mb-4 text-orange-800 text-center">
+            📲 SNSでもKimochiを検索！
           </h2>
           
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm bg-white rounded-lg shadow-sm">
-              <thead>
-                <tr className="bg-gray-50 text-gray-700">
-                  <th className="p-3 text-left font-medium">サービス</th>
-                  <th className="p-3 text-center font-medium">相談方法</th>
-                  <th className="p-3 text-center font-medium">料金</th>
-                  <th className="p-3 text-center font-medium">専門性</th>
-                  <th className="p-3 text-center font-medium">匿名性</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-t border-orange-200 bg-orange-50">
-                  <td className="p-3 font-medium text-orange-800">HSPChatApp</td>
-                  <td className="p-3 text-center">💬 AI チャット</td>
-                  <td className="p-3 text-center">🆓 基本無料</td>
-                  <td className="p-3 text-center">⭐⭐⭐ AI</td>
-                  <td className="p-3 text-center">🔒 完全匿名</td>
-                </tr>
-                <tr className="border-t border-purple-200 bg-purple-50">
-                  <td className="p-3 font-medium text-purple-800">Kimochi</td>
-                  <td className="p-3 text-center">📹 ビデオ/音声</td>
-                  <td className="p-3 text-center">💰 2,980円~</td>
-                  <td className="p-3 text-center">⭐⭐⭐⭐⭐ 公認心理師</td>
-                  <td className="p-3 text-center">🔒 顔出し不要</td>
-                </tr>
-                <tr className="border-t border-gray-200">
-                  <td className="p-3 font-medium text-gray-700">対面カウンセリング</td>
-                  <td className="p-3 text-center">👥 対面</td>
-                  <td className="p-3 text-center">💸 5,000円~</td>
-                  <td className="p-3 text-center">⭐⭐⭐⭐⭐ 臨床心理士</td>
-                  <td className="p-3 text-center">❌ 実名・対面</td>
-                </tr>
-                <tr className="border-t border-gray-200">
-                  <td className="p-3 font-medium text-gray-700">他オンライン</td>
-                  <td className="p-3 text-center">📹 ビデオ/音声</td>
-                  <td className="p-3 text-center">💸 3,000円~</td>
-                  <td className="p-3 text-center">⭐⭐⭐⭐ カウンセラー</td>
-                  <td className="p-3 text-center">⚠️ サービス次第</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div className="mt-4 bg-white rounded-lg p-4">
-            <h3 className="font-bold text-gray-800 mb-2 text-center">💡 HSPの方へのおすすめ使い分け</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-              <div className="bg-orange-50 p-3 rounded-lg">
-                <p className="font-medium text-orange-800 mb-1">📱 日常的な心のケア</p>
-                <p className="text-orange-700">HSPChatApp で感情整理や軽い相談</p>
-              </div>
-              <div className="bg-purple-50 p-3 rounded-lg">
-                <p className="font-medium text-purple-800 mb-1">🎯 専門的な深い相談</p>
-                <p className="text-purple-700">Kimochi で人間関係・恋愛・仕事の悩み</p>
-              </div>
+          <div className="bg-white rounded-lg p-4">
+            <p className="text-sm text-gray-700 mb-3">
+              最近はGoogle検索だけでなく、<span className="font-bold text-orange-700">Instagram・TikTok</span>でも情報収集する方が増えています！<br />
+              <span className="font-bold text-orange-600">オンラインだから手軽で続けやすい</span>心のケアについて多くの体験談を見ることができます。
+            </p>
+            <div className="bg-orange-100 p-3 rounded-lg">
+              <p className="text-xs text-orange-700">
+                💡 <span className="font-medium">ヒント</span><br />
+                #Kimochi #オンラインカウンセリング #公認心理師 でたくさんの体験談が見つかります
+              </p>
+            </div>
+            
+            <div className="mt-4 text-center">
+              <a 
+                href="https://px.a8.net/svt/ejp?a8mat=45C669+E0VLRM+5OI8+5YZ76" 
+                rel="nofollow" 
+                className="inline-flex items-center gap-1 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 btn-shine"
+              >
+                【Kimochi】を詳しく見る
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+              <img width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=45C669+E0VLRM+5OI8+5YZ76" alt="" style={{ display: 'none', border: 0 }}/>
             </div>
           </div>
         </div>
       </section>
 
+
       {/* 安心メッセージ */}
       <section className="px-6 py-6">
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
+        <div className="bg-orange-50 border border-orange-200 rounded-xl p-4">
           <div className="text-center">
-            <p className="text-sm text-blue-800">
+            <p className="text-sm text-orange-800">
               <span className="font-medium">🔒 プライバシー完全保護</span><br />
               HSPChatAppとKimochiは別々のサービスです。<br />
               どちらのサービスも個人情報を適切に管理しています。
